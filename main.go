@@ -6,7 +6,7 @@ import (
     "appengine"
 )
 
-func main() {
+func init() {
   m := martini.Classic()
   m.Use(AppEngine)
   m.Get("/", func() string {
